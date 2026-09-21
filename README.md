@@ -34,6 +34,14 @@ Claude Desktop / Cursor / any Streamable HTTP client:
 
 A free Apify account gives you an API token and $5 of monthly credits. Tool calls are billed pay-per-event to your Apify account: a `check_url` costs a fraction of a cent; verifying the 10 sources of an answer about two cents. No subscription, nothing to run.
 
+## Try it — three prompts
+
+1. *"Check the sources in the answer you just gave me: does each link exist, and is the quote really on the page?"* → `verify_citations`
+2. *"Before we cite anything from example.com, what does the site publish and allow?"* → `site_overview`
+3. *"Check every link in this README and tell me which are broken or redirected."* → `check_links`
+
+**Claude Code**: ready-made plugin with two skills — `/plugin marketplace add Luca-003/web-hygiene-claude-plugin` then `/plugin install web-hygiene@luca-003` ([repo](https://github.com/Luca-003/web-hygiene-claude-plugin)).
+
 ## Why
 
 Language models are confident about links and sources they have never fetched. These tools let an agent **look before it claims**: verify a URL exists and where it leads, check robots.txt and `llms.txt` before quoting a site, read what a site really publishes, confirm a cited page carries the quoted passage.
