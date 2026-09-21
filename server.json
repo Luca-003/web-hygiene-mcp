@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.luca-003/web-hygiene-mcp",
+  "title": "Web Hygiene MCP",
+  "description": "Live web checks for AI agents: sitemaps, robots.txt, URL status, broken links, feeds, citations.",
+  "repository": {
+    "url": "https://github.com/Luca-003/web-hygiene-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/bruco3/web-hygiene-mcp",
+  "version": "0.2.1",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bruco3--web-hygiene-mcp.apify.actor/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your Apify API token> - get one free at https://console.apify.com/settings/integrations. Tool calls are billed to your Apify account, pay per event.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
