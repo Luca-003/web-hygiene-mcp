@@ -1,5 +1,7 @@
 # Web Hygiene MCP
 
+[![AllMCPs Verified](https://allmcps.com/api/badge/web-hygiene-mcp?style=shield)](https://allmcps.com/mcp/web-hygiene-mcp) · Official MCP Registry: `io.github.Luca-003/web-hygiene-mcp`
+
 Remote MCP server (Streamable HTTP) that gives AI agents **seven tools answering from the live web** — never from a cache or the model's memory:
 
 | Tool | What it does |
